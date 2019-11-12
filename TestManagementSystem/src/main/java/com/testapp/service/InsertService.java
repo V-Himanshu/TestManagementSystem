@@ -5,4 +5,6 @@ import com.testapp.model.UserData;
 public interface InsertService {
 
 	void insertUserRegistrationData(UserData userData);
+	
+	void insertQuestionsFromExcelToDb();
 }

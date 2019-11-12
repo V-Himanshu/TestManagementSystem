@@ -1,10 +1,13 @@
 package com.testapp.dao;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import com.testapp.model.Questions;
 import com.testapp.model.UserData;
 
 public class InsertDaoImpl implements InsertDao {
@@ -33,6 +36,11 @@ public class InsertDaoImpl implements InsertDao {
 //		int num = jdbcTemplate.update(sql1, "himanshulodha10@gmail.com", "Hpj97", "himanshu");
 //		System.out.println(num1 + " " + num2);
 
+	}
+
+	public void insertQuestionsFromExcelToDb(List<Questions> questions) {
+		
+		
 	}
 
 }
