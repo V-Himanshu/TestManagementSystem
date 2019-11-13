@@ -11,6 +11,15 @@ public class Questions {
 	private String option4;
 	private String option5;
 	private String answer;
+	private String optionType;
+
+	public String getOptionType() {
+		return optionType;
+	}
+
+	public void setOptionType(String optionType) {
+		this.optionType = optionType;
+	}
 
 	public String getQuestionId() {
 		return questionId;
@@ -88,7 +97,7 @@ public class Questions {
 	public String toString() {
 		return "Questions [questionId=" + questionId + ", topic=" + topic + ", questionDescription="
 				+ questionDescription + ", option1=" + option1 + ", option2=" + option2 + ", option3=" + option3
-				+ ", option4=" + option4 + ", option5=" + option5 + ", answer=" + answer + "]";
+				+ ", option4=" + option4 + ", option5=" + option5 + ", answer=" + answer + ", optionType=" + optionType + "]";
 	}
 
 }

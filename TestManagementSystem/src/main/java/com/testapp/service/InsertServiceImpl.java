@@ -28,7 +28,7 @@ public class InsertServiceImpl implements InsertService {
 	}
 
 	public void insertQuestionsFromExcelToDb(){
-		String filePath = "/home/wizard/Desktop/Java/TestManagementSystem/gfgcontribute.xlsx";
+		String filePath = "C:\\Users\\harihara.k\\Desktop\\QuestionBank.xlsx";
 //		int count = 0;
 		List<Questions> questionsList = new ArrayList<Questions>();
 		FileInputStream fis = null;
@@ -87,6 +87,9 @@ public class InsertServiceImpl implements InsertService {
 						}
 						if (cell.getColumnIndex() == 8) {
 							questions.setAnswer(value);
+						}
+						if (cell.getColumnIndex() == 9) {
+							questions.setOptionType(value);
 						}
 
 						// }

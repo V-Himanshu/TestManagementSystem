@@ -23,4 +23,9 @@ public class InsertController {
 		insertService.insertUserRegistrationData(userData);
 		return new ModelAndView("login");
 	}
+
+	@RequestMapping(value = "/insertQuestions", method = RequestMethod.GET)
+	public void insertQuestionsFromExcelToDb() {
+		insertService.insertQuestionsFromExcelToDb();
+	}
 }
